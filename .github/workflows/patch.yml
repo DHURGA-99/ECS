@@ -1,0 +1,17 @@
+name: Workflow to test container  
+  #schedule:
+   #- cron: '57 15 * * *'
+# env:
+#   AWS_REGION: ${{ secrets.AWS_REGION }}                                                                              # set this to your preferred AWS region, e.g. us-west-1
+#   AWS_IAM_ROLE: ${{ secrets.AWS_IAM_ROLE }}                                           # Role to assume via OIDC provider
+#   ECR_REPOSITORIES: ${{ secrets.ECR_REPOSITORIES }}                                                      # set this to your Amazon ECR repository name prefix
+#   ECS_SERVICE: ${{ secrets.ECS_SERVICE }}                                                                # set this to your Amazon ECS service name
+#   ECS_CLUSTER: ${{ secrets.ECS_CLUSTER }}                                                                   # set this to your Amazon ECS cluster name #permissions:
+  #id-token: write
+  #contents: read
+jobs:
+  call-workflow:
+    uses: ./.github/workflows/main.yml
+    with: 
+      environment: dev
+    secrets: inherit
