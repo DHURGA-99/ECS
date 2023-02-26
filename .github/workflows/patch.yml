@@ -1,6 +1,6 @@
 name: Workflow to test container  
   #schedule:
-   #- cron: '57 15 * * *'
+  #- cron: '57 15 * * *'
 # env:
 #   AWS_REGION: ${{ secrets.AWS_REGION }}                                                                              # set this to your preferred AWS region, e.g. us-west-1
 #   AWS_IAM_ROLE: ${{ secrets.AWS_IAM_ROLE }}                                           # Role to assume via OIDC provider
