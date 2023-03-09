@@ -5,10 +5,8 @@ name: Deploy to ECR
 # Controls when the workflow will run
 on:
   workflow_dispatch:
-
-jobs:
   
-  build:
+build:
     
     name: Build Image
     runs-on: ubuntu-latest
